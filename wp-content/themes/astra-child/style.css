@@ -10,11 +10,144 @@ Text Domain: astra-child
 Template: astra
 */
 
-#masthead .ast-container, .site-header-focus-item + .ast-breadcrumbs-wrapper{
-    padding-right:0;
+#masthead .ast-container,
+.site-header-focus-item+.ast-breadcrumbs-wrapper {
+    padding-right: 0;
 }
 
-#menu-item-10 a{
+.menu-link {
+    color: inherit !important;
+}
+
+.menu-link:hover {
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+#menu-item-10 a {
     background-color: #DC9F96;
-    color:#FFF;
+    color: #FFF !important;
+}
+
+#menu-item-10 a:hover {
+    background-color: #C02E44;
+}
+
+/** Footer **/
+.site-below-footer-wrap[data-section="section-below-footer-builder"] {
+    background-color: #FFFFFF;
+    border: none;
+    padding: 0;
+}
+
+/** Formulaire de commande **/
+.order-form {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.order-form h3 {
+    color: #FFF;
+    font-family: "Syne";
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.order-form label {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#input_quantity {
+    border-radius: 0 !important;
+    height: 55px !important;
+}
+
+.order-form input {
+    padding: 35px 10px !important;
+}
+
+.order-your-informations {
+    width: 50%;
+}
+
+.order-delivery {
+    width: 50%;
+}
+
+.separator-form {
+    background: #FFF;
+    width: 1px;
+}
+
+.submit-order {
+    background-color: #E0B9B4 !important;
+    font-weight: 400 !important;
+    color: #FFFFFF !important;
+    font-size: 15px !important;
+    border-radius: 5px !important;
+}
+
+.submit-order:hover {
+    background-color: #C02E44 !important;
+
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    display: block;
+    margin: 0 auto;
+    font-family: "Syne", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #E0B9B4;
+    padding: 20px 70px;
+    border-radius: 12px;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+    background-color: #ece2da;
+}
+
+/** Menu toogle sur mobile **/
+[data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal {
+    background: #b9b2ad;
+}
+
+/** Footer **/
+.site-below-footer-wrap[data-section="section-below-footer-builder"] .ast-builder-grid-row,
+.site-below-footer-wrap[data-section="section-below-footer-builder"] .site-footer-section {
+    align-items: center !important;
+}
+
+/* Tablettes  */
+@media only screen and (max-width: 1024px) {
+    .wp-image-168 {
+        display: none !important;
+    }
+
+}
+
+/* Mobiles*/
+@media only screen and (max-width: 768px) {
+
+
+    .order-form {
+        flex-direction: column;
+    }
+
+    .order-your-informations,
+    .order-delivery {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .elementor-166 .elementor-element.elementor-element-a600e65 {
+        width: 100% !important;
+    }
 }
