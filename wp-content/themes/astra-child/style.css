@@ -60,9 +60,28 @@ Template: astra
     font-weight: 400;
 }
 
-#input_quantity {
+.order-products {
+    display: flex;
+    gap: 20px;
+}
+
+.order-product .wpcf7-form-control-wrap {
+    text-align: center !important;
+    margin-top: 15px;
+}
+
+.wpcf7 input.wpcf7-form-control:not([type=submit]),
+.wpcf7 textarea.wpcf7-form-control {
+    padding: unset;
+}
+
+.order-product input[type="number"] {
+    padding: 0 6px;
     border-radius: 0 !important;
     height: 55px !important;
+    width: 22% !important;
+    text-align: center;
+
 }
 
 .order-form input {
@@ -135,11 +154,23 @@ input.wpcf7-form-control.wpcf7-submit:hover {
         display: none !important;
     }
 
+    .order-products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .elementor-element-8e6cad3 {
+        text-align: center;
+    }
+
 }
 
 /* Mobiles*/
 @media only screen and (max-width: 768px) {
 
+    .order-products {
+        flex-direction: column;
+    }
 
     .order-form {
         flex-direction: column;
